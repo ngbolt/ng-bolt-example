@@ -1,0 +1,29 @@
+{
+  "views": [
+    {
+      "path": "/view1",
+      "route": {
+        "templateUrl": "partials/view1/view1.template.html"
+      },
+      "animation": "slide"
+    },
+    {
+      "path": "/view2",
+      "route": {
+        "templateUrl": "partials/view2/view2.template.html",
+        "controller": "View2Controller",
+        "controllerAs": "ctrl"
+      },
+      "animation": "slide"
+    },
+    {
+      "path": "/view3",
+      "route": {
+        "templateUrl": "partials/view3/view3.template.html",
+        "controller": "View3Controller",
+        "controllerAs": "ctrl"
+      },
+      "animation": "fade"
+    }
+  ]
+}

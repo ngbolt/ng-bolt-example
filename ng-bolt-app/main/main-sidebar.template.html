@@ -1,0 +1,34 @@
+<header class="panel-header">
+  <h2 class="panel-title">Views</h2>
+</header>
+<div class="panel-body">
+  <ul class="menu menu-borders">
+    <li class="menu-item"
+        ng-class="{'menu-active': Main.view == '/view1'}" >
+      <button class="menu-link" 
+              ng-click="Main.openView('/view1', 'menu')">
+              View 1
+      </button>
+    </li>
+    <li class="menu-item"
+        ng-class="{'menu-active': Main.view == '/view2'}">
+      <button class="menu-link" 
+              ng-click="Main.openView('/view2', 'menu')">
+              View 2
+      </button>
+    </li>
+    <li class="menu-item"
+        ng-class="{'menu-active': Main.view == '/view3'}">
+      <button class="menu-link" 
+              ng-click="Main.openView('/view3', 'menu')">
+              View 3
+      </button>
+    </li>
+  </ul>
+</div>
+<footer class="panel-footer edge-top">
+  <button class="panel-btn-text" 
+          blt-close="menu">
+          Close
+  </button>
+</footer>

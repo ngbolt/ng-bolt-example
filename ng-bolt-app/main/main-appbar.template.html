@@ -1,0 +1,19 @@
+<div class="appbar-section appbar-shrink">
+  <img class="appbar-logo" src="images/logo.png">
+  <h1 class="appbar-title">
+    <span>{{Main.title}}</span>
+  </h1>
+</div>
+<div class="appbar-section right">
+  <div class="appbar-search" ng-show="Main.search.show">
+    <input class="appbar-search-field" id="filter" type="search" placeholder="{{ Main.search.placeholder }}" ng-model="Main.search.value">
+    <button class="appbar-search-clear" ng-click="Main.search.value = ''" ng-disabled="!Main.search.value"><span class="fa fa-times-circle"></span></button>
+  </div>
+</div>
+<div class="appbar-section shrink">
+  <button class="appbar-icon" ng-click="Main.search.show = !Main.search.show"><span class="fa fa-search"></span></button>
+  <button class="appbar-icon" ng-click="Main.logout()">
+    <span class="fa fa-sign-out"></span>
+  </button>
+  <button class="appbar-icon" blt-open="menu"><span class="fa fa-bars"></span></button>
+</div>
